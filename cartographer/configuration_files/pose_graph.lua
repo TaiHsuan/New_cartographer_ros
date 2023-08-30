@@ -63,8 +63,8 @@ POSE_GRAPH = {
   matcher_rotation_weight = 1.6e3,
   optimization_problem = {
     huber_scale = 1e1,
-    acceleration_weight = 1.1e2,
-    rotation_weight = 1.6e4,
+    acceleration_weight = 1e3,
+    rotation_weight = 3e5,
     local_slam_pose_translation_weight = 1e5,
     local_slam_pose_rotation_weight = 1e5,
     odometry_translation_weight = 1e5,
@@ -84,7 +84,7 @@ POSE_GRAPH = {
     },
   },
   max_num_final_iterations = 200,
-  global_sampling_ratio = 0.003,
+  global_sampling_ratio = 0.0003,
   log_residual_histograms = true,
   global_constraint_search_after_n_seconds = 10.,
   --  overlapping_submaps_trimmer_2d = {
